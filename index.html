@@ -1,1 +1,1432 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Botao Zhang" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Botao Zhang">Botao Zhang</h1>
+
+          <p class="title">Master's student in Operations Research</p>
+          <p class="title">Columbia University</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:bz2462@columbia.edu" class="contact-link">bz2462@columbia.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+19296261688" class="contact-link">+1 (929) 626-1688</a>
+            </div>
+
+          </li>
+
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New York City, New York, USA</address>
+            </div>
+
+          </li>
+
+          
+          
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Wanna Appointment?</p>
+              <a href="https://calendly.com/botaoz/30min" class="contact-link"> Schedule Here </a>
+
+<!--              <time datetime="2000-12-15">Schedule an informal appointment here</time>-->
+            </div>
+
+          </li>
+          
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/botao-zhang" class="social-link">
+              <ion-icon name="logo-facebook" ></ion-icon>
+   
+            </a>
+
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/botao-zhang" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/botao-zhang" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/botao-zhang" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+          Hey there! I'm an enthusiastic and inquisitive individual currently pursuing a Master's degree in Operations Research at Columbia University in the City of New York.
+          I'm passionate about technology and software engineering and have gained experience in <i>Portfolio Optimization with Reinforcement Learning</i> at <b>MathWorks</b>, <i>Natural Language Processing</i> at <b>Baidu</b>, and have contributed to publications on <i>Wireless Communication with Machine Learning</i>.
+
+          </p>
+
+          <p>
+          In my free time, I enjoy running, hiking, gaming, and video editing. I'm also fascinated by astronomy and geography, and enjoy learning about the wonders of the universe and our planet. I am always on the lookout for new experiences and opportunities to learn and grow, both academically and personally.
+          If you're interested in connecting with me, feel free to reach out or schedule a coffee appointment via the link on the left if you are in New York! I'm always up for a good conversation!
+          </p>
+        </section>
+
+
+        <!--
+          - Publications and Presentations
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Highlights</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+              
+              
+              
+              
+              
+              
+ <!--       1st achievement -->
+              <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+<!--                    src="./assets/images/avatar-1.png"-->
+                  <img src="./assets/images/me-1.png" alt="Botao Zhang" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Publication</h4>
+                 
+                 <div>
+                     <time class = "testimonials-time" data-testimonials-time ="2020-04-25" > April 25, 2020</time>
+                     
+                     </div>
+                 
+                 
+                <div class="testimonials-text" data-testimonials-text>
+<!--                    <time class="card-time" data-testimonials-time="2022-03-01"></time>-->
+                  <p>
+                  First Author: Constructing Radio Maps for UAV Communications via Dynamic Resolution Virtual Obstacle Maps.
+                  
+                  </p>
+                  
+                  
+<!--                  <a href="https://ieeexplore.ieee.org/document/9154223" class="contact-link">Official Website-->
+<!--         -->
+<!--                  </a>-->
+                </div>
+
+              </div>
+            </li>
+              
+              
+              
+              
+              
+ <!--       2nd achievement -->
+              <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/me-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Presentation</h4>
+                 
+                 <div>
+                     <time class = "testimonials-time" data-testimonials-time ="2022-12-05" > Dec. 05, 2022</time>
+                     
+                     </div>
+                
+                <div class="testimonials-text" data-testimonials-text>
+<!--                    <time class="card-time" data-testimonials-time="2022-03-04"></time>-->
+                  <p>
+                  Independent Research: Goal-Based Wealth Management with Reinforcement Learning at <b>Mathworks</b>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+              
+              
+              
+              
+              
+              
+ <!--       3rd achievement -->
+              
+              <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/me-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Competition</h4>
+ 
+                <div>
+                 <time class = "testimonials-time" data-testimonials-time="2020-09-30" > Sep. 30, 2020</time>
+                 
+                 </div>
+                 
+                 
+                <div class="testimonials-text" data-testimonials-text>
+                    
+                  <p>
+                  Top performance: Ninth Dialog System Technology Challenge (DSTC9) held by Google Research etc.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+           
+           
+<!--       4th achievement -->
+           
+
+           <li class="testimonials-item">
+           <div class="content-card" data-testimonials-item>
+
+             <figure class="testimonials-avatar-box">
+               <img src="./assets/images/me-4.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+             </figure>
+
+             <h4 class="h4 testimonials-item-title" data-testimonials-title>Presentation</h4>
+              
+              <div>
+                  <time class = "testimonials-time" data-testimonials-time ="2022-06-04" > June 4, 2021</time>
+                  
+                  </div>
+             
+             <div class="testimonials-text" data-testimonials-text>
+<!--                    <time class="card-time" data-testimonials-time="2022-03-04"></time>-->
+               <p>
+               Head Undergrad Teaching Assistant: Linear Optimization Basics
+               </p>
+             </div>
+
+           </div>
+         </li>
+           
+
+           
+           
+<!--       5th achievement -->
+           
+
+           <li class="testimonials-item">
+           <div class="content-card" data-testimonials-item>
+
+             <figure class="testimonials-avatar-box">
+               <img src="./assets/images/me-5.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+             </figure>
+
+             <h4 class="h4 testimonials-item-title" data-testimonials-title>Conference Presentation</h4>
+              
+              <div>
+                  <time class = "testimonials-time" data-testimonials-time ="2022-04-25" >  April 25, 2020</time>
+                  
+                  </div>
+             
+             <div class="testimonials-text" data-testimonials-text>
+<!--                    <time class="card-time" data-testimonials-time="2022-03-04"></time>-->
+               <p>
+               The 21st IEEE International Workshop on Signal Processing Advances in Wireless Communications
+               </p>
+             </div>
+
+           </div>
+         </li>
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Botao Zhang" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Botao Zhang</h4>
+
+              
+              <div class="modal-time">
+             <time class="h3 modal-time" data-modal-time> 12 Feb, 2020</time>
+             </div>
+              
+              <div data-modal-text>
+                  
+                <p>
+                </p>
+              </div>
+              
+
+            </div>
+
+          </section>
+
+        </div>
+
+ 
+                
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Research Interests</h3>
+
+          <ul class="service-list">
+
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mathematical Modeling</h4>
+
+                  <p class="service-item-text">
+                  Develop a mathematical model for predictions and optimization.
+                  </p>
+                </div>
+
+              </li>
+              
+              
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Algorithms</h4>
+
+                <p class="service-item-text">
+                Design well-defined instructions to solve a well-defined problem.
+                </p>
+              </div>
+
+            </li>
+
+
+
+            
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-design.svg
+              " alt="design icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Machine Learning (NLP, RL)</h4>
+
+              <p class="service-item-text">
+              Make predictions or decisions without being explicitly programmed to do so.
+              </p>
+            </div>
+
+          </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Investment Science</h4>
+
+                <p class="service-item-text">
+                Make wise decisions in investments.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+<!--        -->
+<!--        -->
+<!--        <!---->
+<!--          - clients-->
+<!--        -->-->
+<!---->
+<!--        <section class="clients">-->
+<!---->
+<!--          <h3 class="h3 clients-title">Clients</h3>-->
+<!---->
+<!--          <ul class="clients-list has-scrollbar">-->
+<!---->
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-1-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-2-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-3-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-4-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-5-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-6-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--          </ul>-->
+<!---->
+<!--        </section>-->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Columbia University in the City of New York</h4>
+              
+              <p class="timeline-item-major">
+              <i> M.S. in Operations Research </i>
+              </p>
+              
+              <span>Expected Dec 2023</span>
+              
+
+              <p class="timeline-text">
+                    GPA: 4.11/4.00
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chinese Universit of Hong Kong</h4>
+
+              <p class="timeline-item-major">
+              <i> B.Eng. in Electronic Information Engineering </i>
+              </p>
+              
+              <span>2017 — 2021</span>
+
+              <p class="timeline-text">
+                Grade: First Class Honors
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graduate Researcher - Portfolio Optimization</h4>
+              <location> MathWorks (Part Time)</location>
+              <span>Sep 2022 - Dec 2022</span>
+              
+
+              <p class="timeline-text">
+              * Conducted independent research on portfolio optimization using reinforcement learning techniques, focusing on the application of Q-learning and deep reinforcement learning algorithms
+              * Scrape real-time stock data from Yahoo Finance, allowing for informed investment decisions
+              * Reproduced two state-of-the-art algorithms proposed by Das et al. in investments, and performed extensive data visualization to identify patterns and insights
+              * Utilized the Reinforcement Learning Toolbox in MATLAB to implement the Q-learning model for portfolio optimization, resulting in efficient implementation and improved code readability
+              * Enhanced the Q-learning algorithm by introducing KL-divergence against uniform distribution to double exploration (G-Learning), further improving model's exploration capabilities
+              * Utilized two batches of neural networks (NN) to approximate the Q-Table (DQN) and enabled state space to be continuous, resulting in higher model accuracy and performance
+              * Developed and compared five reward settings for environment agent exploration, identifying optimal reward function for portfolio optimization with RL
+              * Proposed a novel algorithm achieved 93% success rate, outperforming existing approaches for portfolio optimization
+              * Mentored by two experienced MathWorks employees: Valerio Sperandeo and Alejandra Pena-Ordieres
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Algorithm Intern - Natural Language Processing</h4>
+              <location> Baidu (Internship)</location>
+              <span>Jul 2020 - Sep 2020</span>
+
+              <p class="timeline-text">
+              * Engaged in 9th Dialog System Technology Challenge, a highly regarded research competition held by Google Research, IBM Research AI, etc. to foster collaboration and innovation in field of dialog system
+              * Developed an end-to-end dialog system using a pre-trained dialog generation model known as PLATO-2, resulting in best-performing model used in third track of competition
+              * Fine-tuned PLATO-2 on a variety of publicly available datasets and integrated human-annotated conversations to enhance quality of dialogue in third track of challenge
+              * Conducted both automatic and human assessments to evaluate performance of model, achieving top performance in both subtasks of competition
+              * Collaborated with experts to deliver exceptional results in a dynamic and highly competitive research challenge
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Researcher - Wireless Communication with Machine Learning</h4>
+              <location> Future Network of Intelligence Institute (Internship)</location>
+              <span>Aug 2019 - Feb 2020 </span>
+
+              <p class="timeline-text">
+              * Developed a learning framework for constructing air-to-ground radio map in UAV communications by decomposing  air-to-ground channel into a semi-parametric component path loss and a non-parametric component random  scattering. The model utilized a hidden virtual obstacle map to predict path loss due to various degrees of blockage.
+              * Devised a method for dynamic and local complexity adjustment based on sample density, resulting in improved  performance compared to existing learning schemes under both small and large training regimes.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Learning</h5>
+                <data value="80">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Teaching</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Coding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Research</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Written Materials</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Presentations</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Assortment</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Written Materials</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Presentations</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Assortment</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+              
+              
+              
+              
+              
+              
+<!--              written-->
+
+
+
+
+
+            
+            <li class="project-item  active" data-filter-item data-category="written materials">
+              <a href="https://ieeexplore.ieee.org/document/9154223">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/written-1.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dynamic Resolution Virtual Obstacle Maps for UAV Communication Optimization</h3>
+
+                <p class="project-category">Publication</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="assortment">
+              <a href="https://github.com/powerzbt/GBWM">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/others-1.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dynamic Goals-Based Wealth Management with Reinforcement Learning</h3>
+
+                <p class="project-category">Industry Project</p>
+
+              </a>
+            </li>
+
+            
+
+
+
+
+<!--            <li class="project-item  active" data-filter-item data-category="written materials">-->
+<!--              <a href="#">-->
+<!---->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <ion-icon name="eye-outline"></ion-icon>-->
+<!--                  </div>-->
+<!---->
+<!--                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">-->
+<!--                </figure>-->
+<!---->
+<!--                <h3 class="project-title">Fundo</h3>-->
+<!---->
+<!--                <p class="project-category">Written Materials</p>-->
+<!---->
+<!--              </a>-->
+<!--            </li>-->
+
+            
+            
+            
+<!--            spoken-->
+
+
+
+            
+            
+            
+            
+            <li class="project-item  active" data-filter-item data-category="presentations">
+              <a href="https://drive.google.com/file/d/1BOh0B7b1-GDj9zRoF16swdrneR5xwvMY/view">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pre-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Wealth-based Management with Reinforcement Learning</h3>
+
+                <p class="project-category">Project Presentation</p>
+
+              </a>
+            </li>
+            
+            
+            <li class="project-item  active" data-filter-item data-category="presentations">
+              <a href="https://drive.google.com/file/d/18C6SBM4NCIdsqYLDFbe9hVjBCJ-4YDL3/view">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pre-3.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Constructing Radio Maps for UAV Assisted
+                    Communications</h3>
+
+                <p class="project-category">Conference Presentation</p>
+
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="written materials">
+              <a href="https://drive.google.com/file/d/19fTQBJ52tfSN4sH_BT6PwGRtwenLXhUB/view">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/written-2.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Efficient Simulation of Gaussians using Reproducing Kernel Hilbert Space</h3>
+
+                <p class="project-category">Written Sample</p>
+
+              </a>
+            </li>
+            
+            
+            
+            <li class="project-item  active" data-filter-item data-category="presentations">
+              <a href="https://drive.google.com/file/d/1yp5_HtBi3AAq8jXccLEFo1Tr8Hfdng9N/view">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pre-2.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Linear Optimization Basics</h3>
+
+                <p class="project-category">Tutorial Presentation</p>
+
+              </a>
+            </li>
+            
+            
+
+            
+
+<!--            <li class="project-item  active" data-filter-item data-category="presentations">-->
+<!--              <a href="#">-->
+<!---->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <ion-icon name="eye-outline"></ion-icon>-->
+<!--                  </div>-->
+<!---->
+<!--                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">-->
+<!--                </figure>-->
+<!---->
+<!--                <h3 class="project-title">Summary</h3>-->
+<!---->
+<!--                <p class="project-category">Web development</p>-->
+<!---->
+<!--              </a>-->
+<!--            </li>-->
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--            others-->
+
+
+            
+            
+            
+            
+<!--            -->
+<!--            <li class="project-item  active" data-filter-item data-category="assortment">-->
+<!--              <a href="#">-->
+<!---->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <ion-icon name="eye-outline"></ion-icon>-->
+<!--                  </div>-->
+<!---->
+<!--                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">-->
+<!--                </figure>-->
+<!---->
+<!--                <h3 class="project-title">Brawlhalla</h3>-->
+<!---->
+<!--                <p class="project-category">Applications</p>-->
+<!---->
+<!--              </a>-->
+<!--            </li>-->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+              
+
+              <li class="blog-post-item">
+                <a href="#">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/Napkin.jpg" alt="UI interactions of the week" loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">Book</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-01-16">Jan 16, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Exploring An Infinitely Large Napkin</h3>
+
+                    <p class="blog-text">
+                    Recently, I had the pleasure of delving into "An Infinitely Large Napkin," a recommendation from my brilliant friend CJY. This captivating book delves into an array of mathematical topics, ranging from topology to quantum mechanics, differential geometry, measure theory, and complex variable functions.
+
+                    What sets "An Infinitely Large Napkin" apart from other resources is its ability to provide a strong foundation and a deep understanding of various mathematical concepts. Despite not being as comprehensive as a full semester-long course, the book does an excellent job of explaining important theorems and derivations in various math majors. As someone who has always been curious about these subjects, I found the book to be a valuable resource for deepening my knowledge and satisfying my inquisitive nature.
+
+                    One of the most intriguing concepts I discovered while reading the book was how the state of quantum can be expressed using linear algebra and eigenvalues. This was a groundbreaking discovery for me and revolutionized the way I view quantum mechanics. I was also fascinated to learn about Shor's algorithm, which enables fast decomposition of prime factors at a theoretical level. The complexity of the topic was one that I had previously struggled to understand, but thanks to the clarity provided in the book, I was able to grasp it much better.
+
+                    The topological questions that CJY gave me to work on were also a highlight of my experience with the book. They were challenging, engaging, and allowed me to apply the knowledge I had gained from the book to real-world problems. This provided me with an intellectually stimulating and rewarding experience.
+
+                    Beyond reading the book, I also explored programming languages such as Haskell and Agda. These allowed me to verify mathematical proofs and apply the theoretical knowledge I had gained in practical settings. It was an exciting and innovative way to deepen my understanding of the subject and develop practical skills useful in various fields.
+
+                    I am immensely grateful to CJY for introducing me to "The Napkin," a valuable and enriching resource. The book has provided me with a deeper understanding of key mathematical concepts and challenged me to think more critically about the subject. I look forward to continuing my exploration of this fascinating world and seeing where my journey takes me next.
+                    </p>
+
+                  </div>
+
+                </a>
+              </li>
+
+              
+              
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Thread.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Trading</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-02-02">Fab 2, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Multi-Threading in Trading Systems</h3>
+
+                  <p class="blog-text">
+                  Today, I focused on multi-threading, a powerful tool that can enable a trading system to handle multiple requests and processes in parallel, thereby reducing latency and improving overall system performance.
+                  </p>
+                  <p class="blog-text">
+
+                  While multi-threading can offer significant advantages, it also introduces complexity and risks to a trading system. If implemented poorly, multi-threading can cause unexpected behavior, race conditions, thread synchronization issues, and other technical problems that can result in costly errors, latency, and system downtime. Such issues can lead to financial losses, damage to the trading system's reputation, and a loss of trust from traders and investors.
+                  </p>
+                  <p class="blog-text">
+                  To ensure that multi-threading is implemented correctly, careful planning and implementation are necessary. Trading systems must be designed with the specific requirements and demands of the trading environment in mind, taking into consideration potential risks to prevent issues from arising. Rigorous testing is also critical to identify and address any technical issues that could compromise the system's reliability.
+                  </p>
+                  
+                  
+                  <p class="blog-text">
+                  
+                  </p>
+                  
+                  
+                  <p class="blog-text">
+                  As a trading systems student, I understand the potential benefits and risks of using multi-threading and the importance of implementing it with caution. By doing so, we can design trading systems that are both efficient and effective, providing a competitive edge in the fast-paced and dynamic trading environment.
+                  </p>
+                  <p class="blog-text">
+                  In conclusion, the focus on multi-threading has given me a deeper appreciation of the importance of meticulous planning and implementation in trading system design. As I continue to explore new technologies and approaches to trading systems, I am committed to ensuring that my designs are reliable, efficient, and capable of delivering value to traders and investors.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Order-book.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Trading</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-01-21">Jan 21, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Crafting a Trading Calendar</h3>
+
+                  <p class="blog-text">
+                  Today I ran into a problem with creating a trading calendar using Pandas. Specifically, I needed to create a custom trading calendar that was not consistent with the US Federal Holiday Calendar. While I was able to create a custom calendar instance based on the US Federal Holiday Calendar, I encountered an error when trying to list the holidays within a specified date range.
+
+                  After doing some research, I discovered that the error was caused by trying to call a method of a class instance without first creating an instance of the class. I then realized that it would be more straightforward to create a trading calendar from scratch, and I found some helpful code for doing so.
+
+                  To create a custom trading calendar from scratch, I used the AbstractHolidayCalendar class provided by Pandas. This class provides a framework for creating custom calendars with holiday rules. I defined a new class USTradingCalendar as a subclass of AbstractHolidayCalendar and added holiday rules to the rules list. Then, I defined a function get_trading_close_holidays() that returns the trading holidays for a given year using the holidays() method of the USTradingCalendar instance.
+
+                  After fixing the initial problem with creating the trading calendar, I became interested in studying the field of financial market calendars in more depth. I discovered that there are many pre-defined trading calendars available for various exchanges, and that creating custom calendars is a common problem in financial data analysis.
+
+                  I also learned that there are several Python packages available for working with financial market calendars, including the pandas_market_calendars package I mentioned in my original post. This package provides pre-defined calendars for various exchanges, as well as a framework for creating custom calendars.
+
+                  Overall, while encountering a problem with creating a trading calendar was frustrating, it provided an opportunity for me to learn more about financial market calendars and the tools available for working with them in Python.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+<!--  -->
+<!--  <li class="blog-post-item">-->
+<!--    <a href="#">-->
+<!---->
+<!--      <figure class="blog-banner-box">-->
+<!--        <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">-->
+<!--      </figure>-->
+<!---->
+<!--      <div class="blog-content">-->
+<!---->
+<!--        <div class="blog-meta">-->
+<!--          <p class="blog-category">Design</p>-->
+<!---->
+<!--          <span class="dot"></span>-->
+<!---->
+<!--          <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--        </div>-->
+<!---->
+<!--        <h3 class="h3 blog-item-title">Design digest #80</h3>-->
+<!---->
+<!--        <p class="blog-text">-->
+<!--          Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.-->
+<!--        </p>-->
+<!---->
+<!--      </div>-->
+<!---->
+<!--    </a>-->
+<!--  </li>-->
+<!---->
+<!--            -->
+<!--            -->
+<!--            <li class="blog-post-item">-->
+<!--              <a href="#">-->
+<!---->
+<!--                <figure class="blog-banner-box">-->
+<!--                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">-->
+<!--                </figure>-->
+<!---->
+<!--                <div class="blog-content">-->
+<!---->
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+<!---->
+<!--                    <span class="dot"></span>-->
+<!---->
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+<!---->
+<!--                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>-->
+<!---->
+<!--                  <p class="blog-text">-->
+<!--                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+<!--                  </p>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--              </a>-->
+<!--            </li>-->
+<!---->
+<!--            <li class="blog-post-item">-->
+<!--              <a href="#">-->
+<!---->
+<!--                <figure class="blog-banner-box">-->
+<!--                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">-->
+<!--                </figure>-->
+<!---->
+<!--                <div class="blog-content">-->
+<!---->
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+<!---->
+<!--                    <span class="dot"></span>-->
+<!---->
+<!--                    <time datetime="2022-02-16">Jan 16, 2022</time>-->
+<!--                  </div>-->
+<!---->
+<!--                  <h3 class="h3 blog-item-title">Design digest #79</h3>-->
+<!---->
+<!--                  <p class="blog-text">-->
+<!--                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.-->
+<!--                  </p>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--              </a>-->
+<!--            </li>-->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96619.60532426426!2d-73.97232286025417!3d40.7613446247764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f63e96d30dc9%3A0x577933f947e52750!2sColumbia%20University!5e0!3m2!1sen!2sus!4v1677427221985!5m2!1sen!2sus"
+                 
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+           
+        </section>
+        
+        
+        
+        
+        
+        
+<!--        <button id="scheduleButton">Schedule a Meeting</button>-->
+<!--        <script type="text/javascript">-->
+<!--            // Make a call to the Calendly API to retrieve the scheduling URL-->
+<!--            // Replace the access_token and user_id variables with your own values-->
+<!--            var access_token = "your_access_token";-->
+<!--            var user_id = "your_user_id";-->
+<!--            var url = "https://api.calendly.com/" + user_id + "/users/me";-->
+<!--            var xhr = new XMLHttpRequest();-->
+<!--            xhr.open("GET", url, true);-->
+<!--            xhr.setRequestHeader("Authorization", "Bearer " + access_token);-->
+<!--            xhr.onreadystatechange = function() {-->
+<!--                if (xhr.readyState == 4 && xhr.status == 200) {-->
+<!--                    // Retrieve the scheduling URL from the API response-->
+<!--                    var response = JSON.parse(xhr.responseText);-->
+<!--                    var scheduling_url = response.data.attributes.scheduling_url;-->
+<!--                    // Use the scheduling URL to initialize a pop-up embed-->
+<!--                    Calendly.initPopupWidget({url: scheduling_url});-->
+<!--                    // Show the scheduling page when the button is clicked-->
+<!--                    document.getElementById("scheduleButton").addEventListener("click", function() {-->
+<!--                        Calendly.showPopupWidget();-->
+<!--                    });-->
+<!--                }-->
+<!--            };-->
+<!--            xhr.send();-->
+<!--        </script>-->
+        
+        
+        
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+  
+   
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
